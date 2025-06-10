@@ -22,6 +22,7 @@
         <li><a href="Connect.html">Connect</a></li>
       </ul>
     </nav>
+
   </header>
 
   <h1>Artworks Gallery</h1>
@@ -91,6 +92,15 @@
       });
     };
   </script>
+
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 
 </body>
 </html>

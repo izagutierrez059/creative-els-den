@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Writing | Creative eL’s Den</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    .featured-writing {
+      max-width: 800px;
+      margin: 5rem auto 3rem;
+      padding: 0 1.5rem;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.8;
+    }
+
+    .featured-writing h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .featured-writing img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin: 2rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .featured-writing blockquote {
+      font-style: italic;
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid #c08f73;
+      color: #555;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #c08f73;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .featured-writing h1 {
+        font-size: 1.8rem;
+      }
+
+      .featured-writing img {
+        max-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Creative eL’s Den</h1>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Journal.html">Journal</a></li>
+      <li><a href="Writings.html">Writings</a></li>
+      <li><a href="Connect.html">Connect</a></li>
+    </ul>
+  </nav>
+
+  <main class="featured-writing">
+    <h1>“Bloom Anyway”</h1>
+    <p><strong>Medium:</strong> Digital Painting / Mixed Media<br><strong>Year:</strong> 2025</p>
+    
+    <img src="images/Bloom anyway.png" alt="Bloom Anyway Artwork">
+
+    <p>There’s something quietly rebellious about blooming in a space that isn’t made for growth. <em>“Bloom Anyway”</em> was created during a time when I felt emotionally stuck—when everything around me seemed dim, cluttered, and uninspired. But somewhere deep inside, I still longed for softness. I still longed for color.</p>
+
+    <p>This piece became a gentle defiance. The flower at its center pushes through unseen weight—symbolizing resilience not born from ease, but from choosing to rise anyway. The muted earth tones and soft pastels reflect a quiet strength, while the layered texture speaks of scars, healing, and beginnings that aren't necessarily loud or linear.</p>
+
+    <p>The imperfect edges, the rawness, the unpolished finish—these are intentional. Because growth is never neat. Sometimes it’s messy, slow, and uncertain. But even then, it’s still growth.</p>
+
+    <blockquote>
+      "It's only you who can decide when you can start to bloom again—after hiding yourself, after being deeply wounded by the past. It's only you who can make yourself start again… in a more bloomed way."
+    </blockquote>
+
+    <p>This work is both a reminder and a mirror: that you don’t need perfect conditions to rise. You just need to believe it’s okay to start—imperfectly, quietly, beautifully.</p>
+
+    <a href="Writings.html" class="back-link">← Back </a>
+  </main>
+
+  <footer>
+    <p style="font-size: 0.9rem;">© 2025 Creative eL’s Den. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
