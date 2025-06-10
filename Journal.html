@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal | Creative Soul's Den</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Creative eL’s Den</h1>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Journal.html">Journal</a></li>
+      <li><a href="Writings.html">Writings</a></li>
+      <li><a href="Connect.html">Connect</a></li>
+  </ul>
+  </nav>
+
+  <main>
+  <section class="journal-page">
+  <div class="journal-header">
+    <h2>My Journal</h2>
+    <p>Moments, musings, and memories — one page at a time.</p>
+  </div>
+
+  <!-- Journal Section Template -->
+  <div class="journal-section">
+    <h3>Travel Stories</h3>
+    <div class="journal-grid">
+      <!-- Card Example -->
+      <div class="journal-card">
+        <img src="images/zambales 1st (3).jpg" alt="Travel Cover">
+        <h4>Peace in Zambales</h4>
+        <p>Enjoying the short break before the rainy day season comes.</p>
+        <a href="journal/travel-kyoto.html" class="read-more">Read More →</a>
+      </div>
+      <div class="journal-card">
+        <img src="images/zambales 2nd (2).jpg" alt="Travel Cover">
+        <h4>Take 2 in Zambales</h4>
+        <p>Effortless romantic vibes in the nature of Camara Island.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+  <div class="journal-section">
+    <h3>A Day in My Life</h3>
+    <div class="journal-grid">
+      <div class="journal-card">
+        <img src="images/life1.jpg" alt="Daily Life">
+        <h4>Rainy Sunday Rituals</h4>
+        <p>Coffee, cozy corners, and journaling by the window...</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+      <!-- Add more cards -->
+    </div>
+  </div>
+
+  <div class="journal-section">
+    <h3>Photo Diaries</h3>
+    <div class="journal-grid">
+      <div class="journal-card">
+        <img src="images/diary1.jpg" alt="Photo Diary">
+        <h4>Golden Hour</h4>
+        <p>Capturing fleeting light and long shadows in nature...</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+      <!-- Add more cards -->
+    </div>
+  </div>
+
+  <div class="journal-section">
+    <h3>Memory Board</h3>
+    <div class="journal-grid">
+      <div class="journal-card">
+        <img src="images/memory1.jpg" alt="Memory">
+        <h4>Grandma’s Garden</h4>
+        <p>The scent of soil, laughter, and lavender never fades...</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+      <!-- Add more cards -->
+    </div>
+  </div>
+  </section>
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Creative eL’s Den. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

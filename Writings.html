@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Writings | Creative eL's Den</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Creative eL’s Den</h1>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Journal.html">Journal</a></li>
+      <li><a href="Writings.html" class="active">Writings</a></li>
+      <li><a href="Connect.html">Connect</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="writings-header">
+      <h2>Writings</h2>
+      <p>Thoughts, reflections, and poetic notes from my creative soul.</p>
+    </section>
+
+    <!-- Featured Writing -->
+    <section class="writing-entry">
+      <img src="images/Bloom anyway.png" alt="Bloom Anyway" class="writing-thumbnail">
+      <div class="writing-text">
+        <h3>Bloom Anyway</h3>
+        <p>A reflective piece on healing, resilience, and the quiet power of starting again.</p>
+        <a href="featured-writing.html" class="read-more">Read Full Essay →</a>
+      </div>
+    </section>
+
+    <!-- Add more entries below if needed -->
+
+  </main>
+
+  <footer>
+    <p style="font-size: 0.9rem;">© 2025 Creative eL’s Den. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

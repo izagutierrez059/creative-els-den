@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — Creative Soul's Den</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Creative eL’s Den</h1>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Journal.html">Journal</a></li>
+        <li><a href="Writings.html">Writings</a></li>
+        <li><a href="Connect.html">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Artworks Gallery</h1>
+
+  <section class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/Bloom anyway.png" alt="Artwork 1" onclick="openModal('modal1')" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/Self-portraint- orig.jpg" alt="Artwork 2" onclick="openModal('modal2')" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/Hand-drawn Camera.jpg" alt="Artwork 3" onclick="openModal('modal3')" />
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img src="images/Bloom anyway.png" alt="Artwork 1" />
+      <h2>“Dreamscape”</h2>
+      <p><strong>Medium:</strong> Watercolor & Ink<br /><strong>Year:</strong> 2024</p>
+      <p>This artwork was created during a moment of quiet reflection. The soft washes and fine ink lines represent a journey through imagination and healing solitude.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img src="images/Self-portraint- orig.jpg" alt="Artwork 2" />
+      <h2>“Sunwoven”</h2>
+      <p><strong>Medium:</strong> Acrylic on wood<br /><strong>Year:</strong> 2023</p>
+      <p>Inspired by early mornings and the warmth of sunlight. This piece brings together textured strokes and golden undertones to express peace and resilience.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <img src="images/Hand-drawn Camera.jpg" alt="Artwork 3" />
+      <h2>“Echoes of Growth”</h2>
+      <p><strong>Medium:</strong> Mixed media<br /><strong>Year:</strong> 2022</p>
+      <p>Layers and textures mirror personal transformation. Every mark was intentional — an echo of learning, unlearning, and embracing change.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Creative eL’s Den. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    };
+  </script>
+
+</body>
+</html>

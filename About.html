@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Creative eL's Den</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+  <h1 class="logo">Creative eL’s Den</h1>
+
+  <div class="menu-toggle" id="menu-toggle">
+    &#9776; <!-- hamburger icon (≡) -->
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Journal.html">Journal</a></li>
+    <li><a href="Writings.html">Writings</a></li>
+    <li><a href="Connect.html">Connect</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main class="about-container">
+    <div class="about-image tooltip-wrapper">
+      <img src="images/Mt. Daraitan 2023.png" alt="Hand-drawn self-portrait">
+      <span class="tooltip-text">
+        "Captures a moment of reflection and calm."
+      </span>
+    </div>
+
+    <div class="about-text">
+      <h2>Hi, I'm eL</h2>
+      <p>
+        I'm a creative soul who finds beauty in reflection, growth, and storytelling through art and words.
+        This space is my sanctuary — a place where my thoughts take form as visual expressions and journaled reflections.
+      </p>
+      <p>
+        Whether it’s a quiet sketch, a raw journal entry, or a dreamy digital piece, each creation is a fragment of my journey.
+        I believe in art as a process of healing and discovery. Thank you for being here.
+      </p>
+      <p><em>– With love, eL</em></p>
+    </div>
+  </main>
+
+  <footer>
+  <p style="font-size: 0.9rem;">© 2025 Creative eL’s Den. All rights reserved.</p>
+</footer>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+</body>
+</html>
