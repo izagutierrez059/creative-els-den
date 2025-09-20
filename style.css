@@ -895,3 +895,171 @@ footer nav a {
     height: 180px;
   }
 }
+
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(to bottom right, #fdf6f0, #fcefe8);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* === Carousel Section === */
+.carousel-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel img {
+  width: 300px;
+  margin: 0 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* === Invitation Section === */
+.invitation {
+  background: #faf4f2;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.invitation h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.invitation p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* === Journal Preview Section === */
+.journal-preview {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.journal-preview h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.journal-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.journal-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.journal-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.journal-card a {
+  font-weight: bold;
+  color: #c97c5d;
+  text-decoration: none;
+}
+
+.journal-card a:hover {
+  text-decoration: underline;
+}
+
+/* === Closing Section === */
+.closing {
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .carousel img {
+    width: 220px;
+  }
+
+  .invitation, .journal-preview, .closing {
+    padding: 2rem 1.5rem;
+  }
+}
